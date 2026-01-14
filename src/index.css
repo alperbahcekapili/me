@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  /* Casual, Happy Theme */
+  --bg-color: #fdfbf7;
+  /* Warm paper white */
+  --text-primary: #2d3436;
+  /* Soft charcoal */
+  --text-secondary: #636e72;
+
+  /* Category Colors */
+  --color-research: #a29bfe;
+  /* Soft Purple */
+  --color-swe: #74b9ff;
+  /* Soft Blue */
+  --color-parttime: #fab1a0;
+  /* Soft Coral */
+  --color-startup: #55efc4;
+  /* Soft Mint */
+
+  --accent-color: #fd79a8;
+  /* Pop Pink for highlights */
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Scroll Snap Container */
+.snap-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
