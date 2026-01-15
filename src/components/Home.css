@@ -62,7 +62,6 @@
     /* Or slightly rounded sqaure */
     object-fit: cover;
     /* Crops top 50% */
-    ;
     object-position: bottom;
     /* Ensures it stays pinned to the bottom */
     border: 8px solid #fff;
