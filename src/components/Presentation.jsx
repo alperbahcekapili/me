@@ -44,12 +44,14 @@ const slides = [
     {
         id: 4,
         title: 'Sıradan Olmayan İşe Alım Akışı #2',
-        subtitle: 'Sıradan İşe Alım Akışı → 3. adım',
+        subtitle: '',
         type: 'ordered',
         content: [
+            'Sıradan İşe Alım Akışı → 3. adım',
             'Aday işe alım ekibine ulaşır',
             'İlgili kişinin özgeçmişi incelenir',
-            'Ekip üyesinin ilgili bulması neticesinde filtreleri egale eder<br/><small style="opacity: 0.8; margin-top: 5px; display: block;">Sıradan İşe Alım Akışı → 5. adım</small>'
+            'Ekip üyesinin ilgili bulması neticesinde filtreleri egale eder',
+            'Sıradan İşe Alım Akışı → 5. adım'
         ],
         color: '#C0392B' // Soft Mahogany
     },

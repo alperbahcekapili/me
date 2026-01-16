@@ -8,36 +8,36 @@ const showcaseData = [
         title: 'Blogs',
         color: 'var(--color-swe)',
         items: [
-            { id: 'b1', label: 'Presentation', link: '/presentation', internal: true },
-            { id: 'b2', label: 'AI Research Insights', link: '#' },
-            { id: 'b3', label: 'Software Career Path', link: '#' },
+            { id: 'b1', label: 'CodeTheFuture MiniCamp', link: '/presentation', internal: true, active: true },
+            { id: 'b2', label: 'AI Research Insights', link: '#', active: false },
+            { id: 'b3', label: 'Software Career Path', link: '#', active: false },
         ]
     },
     {
         title: 'Projects',
         color: 'var(--color-startup)',
         items: [
-            { id: 'p1', label: 'Agesec Security', link: 'https://agesec.site' },
-            { id: 'p2', label: 'RAG Chatbot', link: '#' },
-            { id: 'p3', label: 'CV Object Tracker', link: '#' },
+            { id: 'p1', label: 'Agentic Cybersecurity', link: 'https://agesec.site', active: true },
+            { id: 'p2', label: 'RAG Chatbot', link: '#', active: false },
+            { id: 'p3', label: 'CV Object Tracker', link: '#', active: false },
         ]
     },
     {
         title: 'Books to Read',
         color: 'var(--color-research)',
         items: [
-            { id: 'bk1', label: 'Deep Learning', link: '#' },
-            { id: 'bk2', label: 'Clean Code', link: '#' },
-            { id: 'bk3', label: 'Atomic Habits', link: '#' },
+            { id: 'bk1', label: 'Deep Learning', link: '#', active: false },
+            { id: 'bk2', label: 'Clean Code', link: '#', active: false },
+            { id: 'bk3', label: 'Atomic Habits', link: '#', active: false },
         ]
     },
     {
         title: 'Best Photos',
         color: 'var(--color-parttime)',
         items: [
-            { id: 'ph1', label: 'Ankara Skyline', link: '#' },
-            { id: 'ph2', label: 'Nature Walk', link: '#' },
-            { id: 'ph3', label: 'Team Photo', link: '#' },
+            { id: 'ph1', label: 'Ankara Skyline', link: '#', active: false },
+            { id: 'ph2', label: 'Nature Walk', link: '#', active: false },
+            { id: 'ph3', label: 'Team Photo', link: '#', active: false },
         ]
     }
 ];
@@ -63,7 +63,7 @@ const Showcase = () => {
                                     <Link
                                         key={item.id}
                                         to={item.link}
-                                        className={`showcase-btn ${item.label !== 'Presentation' ? 'disabled' : ''}`}
+                                        className={`showcase-btn ${item.active ? '' : 'disabled'}`}
                                     >
                                         {item.label}
                                     </Link>
@@ -73,7 +73,7 @@ const Showcase = () => {
                                         href={item.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className={`showcase-btn ${item.label !== 'Presentation' ? 'disabled' : ''}`}
+                                        className={`showcase-btn ${item.active ? '' : 'disabled'}`}
                                     >
                                         {item.label}
                                     </a>
