@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Showcase.css';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import vizviz from '../assets/gallery/vızvız.jpg';
 
 const showcaseData = [
     {
@@ -35,14 +36,26 @@ const showcaseData = [
         title: 'Best Photos',
         color: 'var(--color-parttime)',
         items: [
-            { id: 'ph1', label: 'Ankara Skyline', link: '#', active: false },
-            { id: 'ph2', label: 'Nature Walk', link: '#', active: false },
-            { id: 'ph3', label: 'Team Photo', link: '#', active: false },
+            { id: 'ph1', label: 'Vızvız', image: vizviz, active: true },
+            { id: 'ph2', label: 'Nature Walk', image: null, active: false },
+            { id: 'ph3', label: 'Team Photo', image: null, active: false },
         ]
     }
 ];
 
 const Showcase = () => {
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const handlePhotoClick = (item) => {
+        if (item.image) {
+            setSelectedImage(item);
+        }
+    };
+
+    const closeModal = () => {
+        setSelectedImage(null);
+    };
+
     return (
         <div className="showcase-container">
             {showcaseData.map((section, index) => (
@@ -58,8 +71,23 @@ const Showcase = () => {
                     <div className="row-content">
                         <h2 className="row-title">{section.title}</h2>
                         <div className="button-group">
-                            {section.items.map((item) => (
-                                item.internal ? (
+                            {section.items.map((item) => {
+                                // Best Photos section - handle image display
+                                if (section.title === 'Best Photos') {
+                                    return (
+                                        <button
+                                            key={item.id}
+                                            onClick={() => handlePhotoClick(item)}
+                                            className={`showcase-btn ${item.active ? '' : 'disabled'}`}
+                                            type="button"
+                                        >
+                                            {item.label}
+                                        </button>
+                                    );
+                                }
+
+                                // Other sections - handle links
+                                return item.internal ? (
                                     <Link
                                         key={item.id}
                                         to={item.link}
@@ -77,12 +105,23 @@ const Showcase = () => {
                                     >
                                         {item.label}
                                     </a>
-                                )
-                            ))}
+                                );
+                            })}
                         </div>
                     </div>
                 </motion.div>
             ))}
+
+            {/* Image Modal */}
+            {selectedImage && (
+                <div className="image-modal" onClick={closeModal}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <button className="close-btn" onClick={closeModal}>✕</button>
+                        <img src={selectedImage.image} alt={selectedImage.label} />
+                        <h3>{selectedImage.label}</h3>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
