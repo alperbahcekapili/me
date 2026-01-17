@@ -3,6 +3,10 @@ import './Showcase.css';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import vizviz from '../assets/gallery/vızvız.jpg';
+import foxy from '../assets/gallery/foxy.jpg';
+import pinky from '../assets/gallery/pinky.jpg';
+import riseAndShine from '../assets/gallery/rise-and-shine.jpg';
+import wholeFamily from '../assets/gallery/whole-family.jpg';
 
 const showcaseData = [
     {
@@ -37,8 +41,10 @@ const showcaseData = [
         color: 'var(--color-parttime)',
         items: [
             { id: 'ph1', label: 'Vızvız', image: vizviz, active: true },
-            { id: 'ph2', label: 'Nature Walk', image: null, active: false },
-            { id: 'ph3', label: 'Team Photo', image: null, active: false },
+            { id: 'ph2', label: 'Foxy', image: foxy, active: true },
+            { id: 'ph3', label: 'Pinky', image: pinky, active: true },
+            { id: 'ph4', label: 'Rise and Shine', image: riseAndShine, active: true },
+            { id: 'ph5', label: 'Whole Family', image: wholeFamily, active: true },
         ]
     }
 ];
