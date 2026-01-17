@@ -14,7 +14,7 @@ const showcaseData = [
         color: 'var(--color-swe)',
         items: [
             { id: 'b1', label: 'CodeTheFuture MiniCamp', link: '/presentation', internal: true, active: true },
-            { id: 'b2', label: 'AI Research Insights', link: '#', active: false },
+            { id: 'b2', label: 'Diffusion Models', link: 'https://github.com/alperbahcekapili/deep-generative-models-topic-summaries/blob/main/diffusion_models.md', active: true },
             { id: 'b3', label: 'Software Career Path', link: '#', active: false },
         ]
     },
@@ -23,8 +23,8 @@ const showcaseData = [
         color: 'var(--color-startup)',
         items: [
             { id: 'p1', label: 'Agentic Cybersecurity', link: 'https://agesec.site', active: true },
-            { id: 'p2', label: 'RAG Chatbot', link: '#', active: false },
-            { id: 'p3', label: 'CV Object Tracker', link: '#', active: false },
+            { id: 'p2', label: 'C++ Ray Tracer', link: 'https://github.com/alperbahcekapili/Advanced-Ray-Tracing', active: true },
+            { id: 'p3', label: 'Bursa Earthquake Hackaton', link: 'https://github.com/alperbahcekapili/BursaDepremHackaton', active: true },
         ]
     },
     {
