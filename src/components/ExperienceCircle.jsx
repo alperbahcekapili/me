@@ -11,8 +11,8 @@ const categories = {
         items: [
             { id: 'r1', title: 'MSc Student', place: 'METU', date: 'Sep 2023 - Present', desc: 'Computer Science. Focus on NLP & Deep Learning.' },
             { id: 'r2', title: 'Research Intern', place: 'TOBB ETU (STAR)', date: 'Jul 2022 - Mar 2023', desc: 'Stance Detection on Social Media. Built end-to-end crawling & analysis capability.' },
-            { id: 'r3', title: 'Publication', place: 'Dataset & Baseline', date: '2023', desc: 'Colorectal cancer tumor grade segmentation: A new dataset and baseline results.' },
-            { id: 'r4', title: 'Publication', place: 'Challenge', date: '2023', desc: 'Colorectal Cancer Tumor Grade Segmentation in Digital Histopathology Images.' },
+            { id: 'r3', title: 'Publication', place: 'Dataset & Baseline', date: '2025', desc: 'Colorectal cancer tumor grade segmentation: A new dataset and baseline results.' },
+            { id: 'r4', title: 'Publication', place: 'Challenge', date: '2025', desc: 'Colorectal Cancer Tumor Grade Segmentation in Digital Histopathology Images.' },
         ]
     },
     swe: {

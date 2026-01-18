@@ -1,0 +1,131 @@
+.blog-container {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-color);
+    padding: 2rem;
+    position: relative;
+}
+
+.back-btn {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 1000;
+    background: white;
+    color: var(--text-primary);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: translateX(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.blog-article {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: var(--shadow-light);
+}
+
+.blog-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.blog-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.blog-meta {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.blog-author {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.blog-date {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.blog-body {
+    line-height: 1.8;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.blog-body h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog-body p {
+    margin-bottom: 1.5rem;
+}
+
+.blog-body ul {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-body li {
+    margin-bottom: 0.8rem;
+    color: var(--text-primary);
+}
+
+.blog-body em {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 1rem;
+    }
+
+    .blog-article {
+        margin: 5rem auto 2rem;
+        padding: 1.5rem;
+    }
+
+    .blog-title {
+        font-size: 1.8rem;
+    }
+
+    .blog-body {
+        font-size: 1rem;
+    }
+
+    .blog-body h2 {
+        font-size: 1.4rem;
+    }
+
+    .back-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}

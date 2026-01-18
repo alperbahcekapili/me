@@ -4,6 +4,7 @@ import Home from './components/Home';
 import ExperienceCircle from './components/ExperienceCircle';
 import Showcase from './components/Showcase';
 import Presentation from './components/Presentation';
+import BlogPost from './components/BlogPost';
 import './App.css'; // Keep if we have app specific globals or overrides
 
 const MainPortfolio = () => {
@@ -34,6 +35,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPortfolio />} />
         <Route path="/presentation" element={<Presentation />} />
+        <Route path="/blog/:postId" element={<BlogPost />} />
       </Routes>
     </Router>
   );
