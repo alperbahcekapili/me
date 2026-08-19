@@ -1,28 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  /* Casual, Happy Theme */
+  /* Casual, Warm, Modern Theme */
   --bg-color: #fdfbf7;
-  /* Warm paper white */
-  --text-primary: #2d3436;
-  /* Soft charcoal */
-  --text-secondary: #636e72;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
 
   /* Category Colors */
   --color-research: #a29bfe;
-  /* Soft Purple */
   --color-swe: #74b9ff;
-  /* Soft Blue */
   --color-parttime: #fab1a0;
-  /* Soft Coral */
   --color-startup: #55efc4;
-  /* Soft Mint */
 
   --accent-color: #fd79a8;
-  /* Pop Pink for highlights */
-  --card-bg: rgba(255, 255, 255, 0.85);
-  --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.05);
-  --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --card-bg: #ffffff;
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 16px 32px rgba(0, 0, 0, 0.08);
 }
 
 * {
@@ -31,37 +24,22 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: var(--bg-color);
   color: var(--text-primary);
   overflow-x: hidden;
 }
 
-/* Scroll Snap Container */
-.snap-container {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
-
-section {
-  height: 100vh;
-  width: 100vw;
-  scroll-snap-align: start;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
 /* Utilities */
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   width: 100%;

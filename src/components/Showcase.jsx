@@ -24,7 +24,6 @@ const showcaseData = [
         items: [
             { id: 'p1', label: 'Agentic Cybersecurity', link: 'https://agesec.site', type: 'external', active: true },
             { id: 'p2', label: 'C++ Ray Tracer', link: 'https://github.com/alperbahcekapili/Advanced-Ray-Tracing', type: 'external', active: true },
-            { id: 'p3', label: 'Bursa Earthquake Hackaton', link: 'https://github.com/alperbahcekapili/BursaDepremHackaton', type: 'external', active: true },
         ]
     },
     {
@@ -45,6 +44,13 @@ const showcaseData = [
             { id: 'ph3', label: 'Pinky', image: pinky, type: 'photo', active: true },
             { id: 'ph4', label: 'Rise and Shine', image: riseAndShine, type: 'photo', active: true },
             { id: 'ph5', label: 'Whole Family', image: wholeFamily, type: 'photo', active: true },
+        ]
+    },
+    {
+        title: 'Talks',
+        color: 'var(--color-swe)',
+        items: [
+            { id: 't1', label: 'Yapay Zekanın Çağında Olmak — Atılım IEEE', link: '/atilim-ieee', type: 'internal', active: true },
         ]
     }
 ];
