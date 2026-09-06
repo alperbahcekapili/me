@@ -15,13 +15,11 @@ const WritingDetail = () => {
     let active = true;
 
     if (!writing) {
-      setError('Writing not found.');
       return () => {
         active = false;
       };
     }
 
-    setError('');
     fetch(writing.url)
       .then((response) => {
         if (!response.ok) {
@@ -52,7 +50,9 @@ const WritingDetail = () => {
         <Link to="/writings" className="writing-detail-back-link">
           ← Back to writings
         </Link>
-        {error ? (
+        {!writing ? (
+          <p className="writing-detail-error">Writing not found.</p>
+        ) : error ? (
           <p className="writing-detail-error">{error}</p>
         ) : (
           <ReactMarkdown>{content}</ReactMarkdown>
