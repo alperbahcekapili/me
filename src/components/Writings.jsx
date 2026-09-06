@@ -1,23 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Writings.css';
-
-const writingModules = import.meta.glob('../writings/**/*.md', {
-  eager: true,
-  import: 'default',
-  query: '?url',
-});
-
-const writings = Object.entries(writingModules)
-  .map(([path, url]) => {
-    const fileName = path.split('/').pop()?.replace(/\.md$/, '') ?? 'Untitled';
-    const title = fileName
-      .replace(/[-_]+/g, ' ')
-      .replace(/\b\w/g, (char) => char.toUpperCase());
-
-    return { title, url };
-  })
-  .sort((a, b) => a.title.localeCompare(b.title));
+import { writings } from '../data/writings';
 
 const Writings = () => {
   return (
@@ -31,10 +15,10 @@ const Writings = () => {
         ) : (
           <ul className="writings-list">
             {writings.map((writing) => (
-              <li key={writing.url}>
-                <a href={writing.url} target="_blank" rel="noreferrer">
+              <li key={writing.slug}>
+                <Link to={`/writings/${encodeURIComponent(writing.slug)}`}>
                   {writing.title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
