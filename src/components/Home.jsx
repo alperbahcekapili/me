@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import profileImg from '../assets/profile_casual2.jpeg';
 import './Home.css';
 
@@ -44,6 +45,9 @@ const Home = () => {
                         <a href="https://github.com/alperbahcekapili" target="_blank" rel="noreferrer" className="social-pill github-pill">
                             <span className="pill-icon">🐙</span> GitHub
                         </a>
+                        <Link to="/writings" className="social-pill writings-pill">
+                            <span className="pill-icon">✍️</span> Writings
+                        </Link>
                     </div>
                 </motion.div>
             </div>

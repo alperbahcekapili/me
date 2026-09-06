@@ -5,6 +5,7 @@ import PortfolioGrid from './components/PortfolioGrid';
 import Presentation from './components/Presentation';
 import AtilimPresentation from './components/AtilimPresentation';
 import BlogPost from './components/BlogPost';
+import Writings from './components/Writings';
 import './App.css';
 
 const MainPortfolio = () => {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/presentation" element={<Presentation />} />
         <Route path="/atilim-ieee" element={<AtilimPresentation />} />
         <Route path="/blog/:postId" element={<BlogPost />} />
+        <Route path="/writings" element={<Writings />} />
       </Routes>
     </Router>
   );

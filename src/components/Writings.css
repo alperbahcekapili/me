@@ -1,0 +1,50 @@
+.writings-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.writings-card {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+}
+
+.writings-card h1 {
+  margin: 0 0 1rem 0;
+}
+
+.writings-empty {
+  color: #4b5563;
+}
+
+.writings-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.writings-list li + li {
+  margin-top: 0.5rem;
+}
+
+.writings-list a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.writings-list a:hover {
+  text-decoration: underline;
+}
+
+.writings-back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #111827;
+}
