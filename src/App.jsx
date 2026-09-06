@@ -6,6 +6,7 @@ import Presentation from './components/Presentation';
 import AtilimPresentation from './components/AtilimPresentation';
 import BlogPost from './components/BlogPost';
 import Writings from './components/Writings';
+import WritingDetail from './components/WritingDetail';
 import './App.css';
 
 const MainPortfolio = () => {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/atilim-ieee" element={<AtilimPresentation />} />
         <Route path="/blog/:postId" element={<BlogPost />} />
         <Route path="/writings" element={<Writings />} />
+        <Route path="/writings/:slug" element={<WritingDetail />} />
       </Routes>
     </Router>
   );
