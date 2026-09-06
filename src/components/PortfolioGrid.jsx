@@ -215,7 +215,7 @@ const gridItems = [
   },
   {
     id: 'colorectal-dataset',
-    title: 'Colorectal cancer tumor grade segmentation: A new dataset and baseline results (2025)',
+    title: 'Heliyon: Colorectal cancer tumor grade segmentation: A new dataset and baseline results (2025)',
     sub: 'Benchmark Dataset Paper',
     type: 'external',
     link: 'https://scholar.google.com/citations?user=jJjKReQAAAAJ&hl=en',
@@ -223,7 +223,7 @@ const gridItems = [
   },
   {
     id: 'colorectal-challenge',
-    title: 'Colorectal Cancer Tumor Grade Segmentation in Histopathology (2025)',
+    title: 'ICIPW: Colorectal Cancer Tumor Grade Segmentation in Histopathology (2025)',
     sub: 'International Challenge Publication',
     type: 'external',
     link: 'https://scholar.google.com/citations?user=jJjKReQAAAAJ&hl=en',
